@@ -7,6 +7,9 @@ import com.jonso.ffighter.FFighter;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.title = "Forward Fighter in libGDX";
+		config.width = 1024;
+		config.height = 512;
 		new LwjglApplication(new FFighter(), config);
 	}
 }
